@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulário - Cadastro</title>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="title">
+        <h1><strong>Formulário</strong></h1>
+      </div>
+      <form action="" method="get" autocomplete="off">
+        <fieldset>
+          <legend><strong>Insira seus dados</strong></legend>
+
+          <div class="conteud">
+            <div class="dados_1">
+              <div class="dados_name_and_lastname">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required>
+              </div>
+              <div class="dados_name_and_lastname">
+                <label for="last_name">Sobrenome</label>
+                <input type="text" name="last_name" id="last_name" required>
+              </div>
+            </div>
+            <div class="dados_2">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Qual curso você está cursando ?</strong></legend>
+
+          <div class="conteud">
+            <select name="college" id="college" required>
+              <option selected disabled value="" class="option">Selecione o seu curso</option>
+              <option class="option" value="eng_civil">ENGENHARIA CIVIL (BACH)</option>
+              <option class="option" value="eng_compt">ENGENHARIA DA COMPUTAÇÃO (BACH)</option>
+              <option class="option" value="eng_mat">ENGENHARIA DE MATERIAIS (BACH)</option>
+              <option class="option" value="eng_minas">ENGENHARIA DE MINAS E MEIO AMBIENTE (BACH)</option>
+              <option class="option" value="eng_elet">ENGENHARIA ELÉTRICA (BACH)</option>
+              <option class="option" value="eng_mec">ENGENHARIA MECÂNICA (BACH)</option>
+              <option class="option" value="eng_quim">ENGENHARIA QUÍMICA (BACH)</option>
+              <option class="option" value="si">SISTEMAS DE INFORMAÇÃO (BACH)</option>
+            </select>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Qual período você está cursando ?</strong></legend>
+
+          <div class="conteud">
+            <select name="time" id="time" required>
+              <option selected disabled value="" class="option">Selecione o período do curso</option>
+              <option class="option" value="1_periodo">1° Período</option>
+              <option class="option" value="2_periodo">2° Período</option>
+              <option class="option" value="3_periodo">3° Período</option>
+              <option class="option" value="4_periodo">4° Período</option>
+              <option class="option" value="5_periodo">5° Período</option>
+              <option class="option" value="6_periodo">6° Período</option>
+              <option class="option" value="7_periodo">7° Período</option>
+              <option class="option" value="8_periodo">8° Período</option>
+              <option class="option" value="9_periodo">9° Período</option>
+              <option class="option" value="10_periodo">10° Período</option>
+            </select>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Quais tecnologias você utiliza?</strong></legend>
+          <div class="conteud tech">
+            <input type="checkbox" name="html" id="html" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="css" id="css" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="javascript" id="javascript" value="javascript">
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" name="php" id="php" value="php">
+            <label for="php">PHP</label>
+            <input type="checkbox" name="sql" id="sql" value="sql">
+            <label for="sql">SQL</label>
+            <input type="checkbox" name="c_chap" id="c_chap" value="c_chap">
+            <label for="c_chap">C#</label>
+            <input type="checkbox" name="others" id="others" value="others">
+            <label for="others">Outros</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Escreva um pouco sobre você, suas espectativa e experiências.</strong></legend>
+          <div class="conteud text_resume">
+            <textarea name="resume" id="resume" required></textarea>
+          </div>
+        </fieldset>
+        <div class="button">
+          <button>Enviar Formulário</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
