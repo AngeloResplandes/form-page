@@ -20,12 +20,12 @@
 
           <div class="conteud">
             <div class="dados_1">
-              <div class="dados_name_and_lastname">
+              <div class="dados_name">
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name" required>
               </div>
-              <div class="dados_name_and_lastname">
-                <label for="last_name">Sobrenome</label>
+              <div class="dados_lastname">
+                <label for="last_name" id="last_name">Sobrenome</label>
                 <input type="text" name="last_name" id="last_name" required>
               </div>
             </div>
@@ -79,20 +79,24 @@
         <fieldset>
           <legend><strong>Quais tecnologias você utiliza?</strong></legend>
           <div class="conteud tech">
-            <input type="checkbox" name="html" id="html" value="html">
-            <label for="html">HTML</label>
-            <input type="checkbox" name="css" id="css" value="css">
-            <label for="css">CSS</label>
-            <input type="checkbox" name="javascript" id="javascript" value="javascript">
-            <label for="javascript">Javascript</label>
-            <input type="checkbox" name="php" id="php" value="php">
-            <label for="php">PHP</label>
-            <input type="checkbox" name="sql" id="sql" value="sql">
-            <label for="sql">SQL</label>
-            <input type="checkbox" name="c_chap" id="c_chap" value="c_chap">
-            <label for="c_chap">C#</label>
-            <input type="checkbox" name="others" id="others" value="others">
-            <label for="others">Outros</label>
+            <div class="check1">
+              <input type="checkbox" name="html" id="html" value="html">
+              <label for="html">HTML</label>
+              <input type="checkbox" name="css" id="css" value="css">
+              <label for="css">CSS</label>
+              <input type="checkbox" name="javascript" id="javascript" value="javascript">
+              <label for="javascript">Javascript</label>
+              <input type="checkbox" name="php" id="php" value="php">
+              <label for="php">PHP</label>
+            </div>
+            <div class="check2">
+              <input type="checkbox" name="sql" id="sql" value="sql">
+              <label for="sql">SQL</label>
+              <input type="checkbox" name="c_chap" id="c_chap" value="c_chap">
+              <label for="c_chap">C#</label>
+              <input type="checkbox" name="others" id="others" value="others">
+              <label for="others">Outros</label>
+            </div>
           </div>
         </fieldset>
 

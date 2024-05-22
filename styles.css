@@ -9,7 +9,7 @@
 /* Zerar o padding e margin do site */
 body {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: #7E6D86;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("images/background.jpg");
+  background-image: url("images/background_sky.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -82,11 +82,19 @@ section .conteud {
 section .dados_1 {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-section .dados_name_and_lastname {
+section .dados_name {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+
+section .dados_lastname {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   flex: 1;
 }
 
@@ -100,7 +108,7 @@ section input {
   font-family: "Open Sans";
   width: 95%;
   padding: 3px;
-  color: #fff;
+  color: #7E6D86;
   border-radius: 5px;
   background-color: #ffffff20;
   border: 2px solid #ffffff30;
@@ -114,10 +122,11 @@ section .dados_2 input {
 section select {
   font-family: "Open Sans";
   padding: 3px;
-  color: #fff;
+  color: #7E6D86;
   border-radius: 5px;
   background-color: #ffffff20;
   border: 2px solid #ffffff30;
+  width: 100%;
   outline: unset;
   cursor: pointer;
 }
@@ -125,7 +134,18 @@ section select {
 section .tech {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+section .tech input {
+  width: auto;
+}
+
+section .check1,
+.check2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 section .option {
@@ -141,7 +161,7 @@ section input[type=checkbox],
 section .conteud textarea {
   font-family: "Open Sans";
   padding: 3px;
-  color: #fff;
+  color: #7E6D86;
   border-radius: 5px;
   background-color: #ffffff20;
   border: 2px solid #ffffff30;
@@ -169,7 +189,7 @@ section button {
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: #7E6D86;
   border-radius: 5px;
   background-color: #ffffff20;
   border: 2px solid #ffffff30;
@@ -177,4 +197,52 @@ section button {
 
 section button:hover {
   background-color: #ffffff50;
+}
+
+@media (max-width:560px) {
+  section .container {
+    width: 360px;
+  }
+
+  section .title h1 {
+    font-size: 28px;
+  }
+
+  section input {
+    font-size: 12px;
+  }
+
+  section legend {
+    font-size: 14px;
+  }
+
+  section label {
+    font-size: 14px;
+  }
+
+  section select {
+    font-size: 12px;
+  }
+
+  section button {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  section .tech {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section .tech input {
+    width: auto;
+  }
+
+  section .check1,
+  .check2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
 }
