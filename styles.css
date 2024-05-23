@@ -1,4 +1,3 @@
-/* Importando uma fonte externa para o projeto */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @font-face {
@@ -15,12 +14,10 @@
   font-style: normal;
 }
 
-/* Habilitar border-box para os elementos tenham o tamanho defido na folha */
 * {
   box-sizing: border-box;
 }
 
-/* Zerar o padding e margin do site */
 body {
   font-family: "SF Pro", "Open Sans", Arial;
   color: #7E6D86;
@@ -28,7 +25,6 @@ body {
   padding: 0;
 }
 
-/* Organização do plano de fundo */
 section {
   display: flex;
   flex-direction: column;
