@@ -1,5 +1,19 @@
-/* Importando uma fonte externa para o projeto*/
+/* Importando uma fonte externa para o projeto */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+  font-family: "SF Pro";
+  src: url(font/SF-Pro-Display-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url(font/SF-Pro-Display-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
 
 /* Habilitar border-box para os elementos tenham o tamanho defido na folha */
 * {
@@ -8,7 +22,7 @@
 
 /* Zerar o padding e margin do site */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "SF Pro", "Open Sans", Arial;
   color: #7E6D86;
   margin: 0;
   padding: 0;
@@ -17,14 +31,15 @@ body {
 /* Organização do plano de fundo */
 section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   background-image: url("images/background_sky.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 section .container {
@@ -36,6 +51,7 @@ section .container {
   border-radius: 20px;
   width: 550px;
   height: 600px;
+  margin-top: 20px;
 }
 
 section .title {
@@ -105,7 +121,7 @@ section .dados_2 input {
 }
 
 section input {
-  font-family: "Open Sans";
+  font-family: "SF Pro", "Open Sans", Arial;
   width: 95%;
   padding: 3px;
   color: #7E6D86;
@@ -120,7 +136,7 @@ section .dados_2 input {
 }
 
 section select {
-  font-family: "Open Sans";
+  font-family: "SF Pro", "Open Sans", Arial;
   padding: 3px;
   color: #7E6D86;
   border-radius: 5px;
@@ -159,7 +175,7 @@ section input[type=checkbox],
 }
 
 section .conteud textarea {
-  font-family: "Open Sans";
+  font-family: "SF Pro", "Open Sans", Arial;
   padding: 3px;
   color: #7E6D86;
   border-radius: 5px;
@@ -167,7 +183,7 @@ section .conteud textarea {
   border: 2px solid #ffffff30;
   outline: unset;
   width: 100%;
-  height: 65px;
+  height: 80px;
   resize: none
 }
 
@@ -179,14 +195,14 @@ section .button {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin-top: 15px;
 }
 
 section button {
   width: 200px;
   cursor: pointer;
   padding: 3px;
-  font-family: "Open Sans";
+  font-family: "SF Pro", "Open Sans", Arial;
   font-size: 20px;
   font-weight: bold;
   color: #7E6D86;
@@ -197,6 +213,36 @@ section button {
 
 section button:hover {
   background-color: #ffffff50;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "SF Pro", "Open Sans", Arial;
+  margin-top: 10px;
+}
+
+footer .text_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .text_footer img,
+#link_github {
+  object-fit: cover;
+  width: 65px;
+  height: 65px;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 @media (max-width:560px) {
@@ -243,6 +289,20 @@ section button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  section .conteud textarea {
+    height: 140px;
+  }
+
+  footer .text_footer img,
+  #link_github {
+    width: 45px;
+    height: 45px;
+  }
+
+  footer p {
+    font-size: 14px;
   }
 
 }
